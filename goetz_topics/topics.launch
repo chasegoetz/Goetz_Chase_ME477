@@ -1,0 +1,10 @@
+<launch>
+	<node name="message_publisher" pkg="goetz_topics"
+	type="message_publisher.py" output="screen"/>
+	<node name="message_subscriber" pkg="goetz_topics"
+	type="message_subscriber.py" output="screen"/>
+	<node name="topic_publisher" pkg="goetz_topics"
+	type="topic_publisher.py" output="screen"/>
+	<node name="topic_subscriber" pkg="goetz_topics"
+	type="topic_subscriber.py" output="screen"/>	
+</launch>

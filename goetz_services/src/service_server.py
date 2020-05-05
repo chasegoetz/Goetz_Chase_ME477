@@ -7,10 +7,10 @@ def count_words(request):
 
 rospy.init_node('service_server')
 
-service = rospy.Service(# register service
-	'word_count',# service name
-	WordCount,# service type
-	count_words# function service provides
+service = rospy.Service( # register service
+	'word_count', # service name
+	WordCount, # service type
+	count_words # function service provides
 )
 
 rospy.spin()

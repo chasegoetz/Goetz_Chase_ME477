@@ -1,6 +1,7 @@
 <launch>
 	<node name="server" pkg="goetz_services"
 	type="service_server.py" output="screen"/>
+	<arg name="input"/>
 	<node name="client" pkg="goetz_services"
-	type="service_client.py" output="screen"/>
+	type="service_client.py" args="$(arg input)" output="screen"/>
 </launch>
